@@ -323,7 +323,6 @@
   &-content {
     display: flex;
 
-
     &-text {
       margin-left: 18px;
       font-family: 'Rubik';
@@ -339,4 +338,297 @@
 
 
   }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 40px;
+  width: 1208px;
+  height: 54px;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+  &-title {
+    width: 1000px;
+    height: 54px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    color: #414141;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+  }
+
+  &-btn {
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+
+    width: 168px;
+    height: 40px;
+
+    border-radius: 4px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    &-ico {
+      display: flex;
+    }
+  }
+}
+
+.allcontent {
+
+  margin-top: 49px;
+  padding-left: @mainPadding;
+  padding-right: @mainPadding;
+
+  &-stocks {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    width: 1208px;
+    height: 349px;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+    &-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+
+      width: 272px;
+      height: 349px;
+
+      background: #FFFFFF;
+
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+
+      flex: none;
+      order: 0;
+      flex-grow: 1;
+
+      &-img {
+        display: block;
+      }
+
+      &-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px;
+        gap: 8px;
+        width: 272px;
+        height: 189px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+
+        &-price {
+          margin-bottom: 8px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: flex-end;
+          padding: 0px;
+          gap: 16px;
+          width: 256px;
+          height: 45px;
+          flex: none;
+          order: 0;
+          align-self: stretch;
+          flex-grow: 0;
+
+          &-disont {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+
+            width: 71px;
+            height: 45px;
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+
+            &-text {
+              display: flex;
+              width: 54px;
+              height: 27px;
+
+              font-family: 'Rubik';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 150%;
+              color: #414141;
+              flex: none;
+              order: 0;
+              flex-grow: 0;
+            }
+
+            &-text span {
+              margin-right: 4px;
+            }
+
+            &-label {
+              width: 71px;
+              height: 18px;
+              font-family: 'Rubik';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 150%;
+              color: #BFBFBF;
+              flex: none;
+              order: 1;
+              align-self: stretch;
+              flex-grow: 0;
+            }
+          }
+
+          &-regular {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 0px;
+            width: 59px;
+            height: 42px;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+
+            &-text {
+              width: 44px;
+              height: 24px;
+              font-family: 'Rubik';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 150%;
+              display: flex;
+              align-items: center;
+              color: #606060;
+              flex: none;
+              order: 0;
+              flex-grow: 0;
+            }
+
+            &-text span {
+              margin-right: 4px;
+            }
+
+            &-label {
+              display: flex;
+              margin-right: -22%;
+              width: 71px;
+              height: 18px;
+              font-family: 'Rubik';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 150%;
+              color: #BFBFBF;
+              justify-content: flex-end;
+
+              order: 1;
+              align-self: self-end;
+              flex-grow: 0;
+            }
+          }
+        }
+
+        &-text {
+          width: 256px;
+          height: 48px;
+          font-family: 'Rubik';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          color: #414141;
+          flex: none;
+          order: 1;
+          align-self: stretch;
+          flex-grow: 0;
+        }
+
+        &-rate {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          padding: 0px;
+          gap: 4px;
+          width: 256px;
+          height: 16px;
+          flex: none;
+          order: 2;
+          align-self: stretch;
+          flex-grow: 0;
+        }
+
+        &-btn {
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 8px;
+          gap: 8px;
+          width: 256px;
+          height: 40px;
+          border: 1px solid #70C05B;
+          border-radius: 4px;
+          flex: none;
+          order: 3;
+          align-self: stretch;
+          flex-grow: 0;
+
+          &-label {
+            justify-content: center;
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #70C05B;
+            flex: none;
+            order: 0;
+            flex-grow: 1;
+          }
+        }
+      }
+    }
+  }
+
 }
