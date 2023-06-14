@@ -1,0 +1,153 @@
+//out: "../css/main.css", compress: true, sourseMap: true
+
+@mainColor: #af936d;
+@mainPadding: 116px;
+
+.top-header {
+  display: flex;
+  height: 72px;
+  background-color: @mainColor;
+  padding-left: @mainPadding;
+  padding-right: @mainPadding;
+  align-items: center;
+
+  //&-lodo_img {}
+
+  &-logo_name {
+    padding-left: 11px;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    font-weight: 900;
+    align-self: center;
+  }
+
+  &-menu {
+    display: flex;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 40px;
+
+
+    &-btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 8px;
+      gap: 8px;
+
+      width: 140px;
+      height: 40px;
+
+      background: #70C05B;
+      border-radius: 4px;
+
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin-right: 16px;
+
+      &-burger {
+
+        width: 24px;
+        height: 24px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+
+        &-stroke {
+          margin-top: 22%;
+          margin-left: 10%;
+          margin-right: 10%;
+          border-radius: 5%;
+          height: 1px;
+          top: 22.92%;
+          bottom: 72.92%;
+          background: #FFFFFF;
+        }
+      }
+
+      &-text {
+        width: 92px;
+        height: 24px;
+
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: #FFFFFF;
+
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 1;
+      }
+    }
+
+    &-search {
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 8px;
+      gap: 10px;
+
+      padding-left: 3%;
+      width: 374px;
+      height: 40px;
+
+      background: #FFFFFF;
+
+      border: 1px solid #70C05B;
+      border-radius: 4px;
+
+      flex: none;
+      order: 1;
+      flex-grow: 1;
+
+      &-text {
+        width: 316px;
+        height: 24px;
+
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+
+        display: flex;
+        align-items: center;
+
+        color: #8F8F8F;
+
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+      }
+
+      &-ico {
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+      }
+    }
+  }
+
+
+}
