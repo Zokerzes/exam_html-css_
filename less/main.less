@@ -1,11 +1,17 @@
 //out: "../css/main.css", compress: true, sourseMap: true
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
 
 @mainColor: #af936d;
 @mainPadding: 116px;
 
 .top {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding-left: @mainPadding;
   padding-right: @mainPadding;
   background-color: white;
@@ -340,22 +346,28 @@
   }
 }
 
+.header:first-child {
+  margin-top: 0;
+}
+
 .header {
+  margin-top: 80px;
+  margin-bottom: 40px;
   display: flex;
-  flex-direction: row;
+
   align-items: flex-end;
   padding: 0px;
   gap: 40px;
-  width: 1208px;
-  height: 54px;
 
+  height: 54px;
+  justify-content: space-between;
   flex: none;
   order: 0;
   align-self: stretch;
   flex-grow: 0;
 
   &-title {
-    width: 1000px;
+    //width: 1000px;
     height: 54px;
     font-family: 'Rubik';
     font-style: normal;
@@ -365,7 +377,7 @@
     color: #414141;
     flex: none;
     order: 0;
-    flex-grow: 1;
+    flex-grow: 0;
   }
 
   &-btn {
@@ -394,7 +406,8 @@
 }
 
 .allcontent {
-
+  width: auto;
+  //align-items: center;
   margin-top: 49px;
   padding-left: @mainPadding;
   padding-right: @mainPadding;
@@ -402,12 +415,12 @@
   &-stocks {
     margin-top: 40px;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 40px;
 
-    width: 1208px;
+    justify-content: space-between;
+    padding: 0px;
+    //gap: 40px;
+
+    //width: 1208px;
     height: 349px;
 
     flex: none;
@@ -421,8 +434,8 @@
       align-items: flex-start;
       padding: 0px;
 
-      width: 272px;
-      height: 349px;
+      width: fit-content;
+      //height: 349px;
 
       background: #FFFFFF;
 
@@ -431,7 +444,7 @@
 
       flex: none;
       order: 0;
-      flex-grow: 1;
+      //flex-grow: 1;
 
       &-img {
         display: block;
@@ -535,6 +548,7 @@
               line-height: 150%;
               display: flex;
               align-items: center;
+              justify-content: space-around;
               color: #606060;
               flex: none;
               order: 0;
@@ -556,7 +570,7 @@
               font-size: 12px;
               line-height: 150%;
               color: #BFBFBF;
-              justify-content: flex-end;
+              justify-content: space-around;
 
               order: 1;
               align-self: self-end;
@@ -600,7 +614,7 @@
           flex-direction: row;
           justify-content: center;
           align-items: center;
-          padding: 8px;
+          //padding: 8px;
           gap: 8px;
           width: 256px;
           height: 40px;
@@ -611,7 +625,16 @@
           align-self: stretch;
           flex-grow: 0;
 
+          &:hover {
+            border: 1px solid #FF6633;
+            background-color: #FF6633;
+            color: white;
+
+          }
+
+
           &-label {
+            height: 100%;
             justify-content: center;
             font-family: 'Rubik';
             font-style: normal;
@@ -625,10 +648,74 @@
             flex: none;
             order: 0;
             flex-grow: 1;
+
+            &:hover {
+              color: white;
+            }
           }
         }
       }
     }
   }
+
+  &-special {
+    margin-top: 40px;
+    display: flex;
+
+    &-content {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      &-card:first-child {
+        margin-right: 20px;
+      }
+
+      &-card:last-child {
+        margin-left: 20px;
+      }
+
+      &-card {
+        display: flex;
+        background: #E5FFDE;
+        border-radius: 4px;
+        width: inherit;
+
+        &:hover {
+          background: #FCD5BA;
+          box-shadow: 0px 8px 16px rgba(202, 147, 96, 0.5);
+        }
+
+        &-text {
+          width: inherit;
+          margin: 30px 20px 44px 40px;
+
+          &-header {
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 150%;
+            color: #414141;
+
+            &-txt {
+              font-family: 'Rubik';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 150%;
+              color: #414141;
+            }
+          }
+        }
+
+        &-img {
+          margin-top: 2%;
+          margin-right: 2%;
+        }
+      }
+    }
+  }
+
 
 }
